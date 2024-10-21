@@ -2,9 +2,9 @@ package org.example;
 
 public class Person {
     protected String name;
-    private String surname;
-    private String email;
-    private int age;
+    protected String surname;
+    protected String email;
+    protected int age;
 
     public Person() {
     }
@@ -59,7 +59,7 @@ public class Person {
     }
 
     public void introduce(){
-        System.out.println("Hi I am ");
+        System.out.println("Hi I am "+ this.name);
     }
 
 }

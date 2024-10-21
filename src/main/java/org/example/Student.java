@@ -22,11 +22,10 @@ public final class Student extends Person{
                 ", name='" + name + '\'' +
                 '}';
     }
-/*
-    @Override
-    public static void introduce() {
-        System.out.println("Hi, I am a student, my name is "+ this.name);
-    }
 
- */
+    @Override
+    public void introduce() {
+        System.out.println("Hi, I am a student, my name is " + this.name
+            +   " my student id is " + this.studentID);
+    }
 }
